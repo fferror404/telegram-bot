@@ -6,9 +6,10 @@ from aiogram.utils import executor
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 import logging
 
-API_TOKEN = 'AAHzGVDRjAEKpn_UA6CZsZHvUoH5XFoHwzw'  # ← иваз кунед
+import os
+API_TOKEN = os.getenv("BOT_TOKEN")
 CHANNEL_USERNAME = '@Taj_garant'
-ADMIN_IDS = [8035955726]
+ADMIN_IDS = [632196899]
 
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
